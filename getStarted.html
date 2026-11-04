@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="getstart">
+    <img src="https://play-lh.googleusercontent.com/uD_zh35smf2APmAC5haunKEULXD1M4yHqczAt6DEme_UXVbn0rDMD8FN5iezME_kSuBC2ZHK4KqOhEAcqLW4cA=w240-h480-rw" alt="Logo" class="logo">
+            <h1>Welcome To AI Interview 🤖</h1>
+           
+            <a href="#" id="history">History</a>
+            <a href="home.html" id="home">👤</a>            
+        </div>
+        <div class="progress-bar">
+            <div class="step-active" id="step1">
+            <span class="step-number">01</span>
+            <span class="step-text">UPLOAD</span>
+            </div>
+           
+
+           <div class="step-locked" id="step2">
+            <span class="step-number">02</span>
+            <span class="step-text">PREFERENCE</span>
+            </div>
+
+              <div class="step-locked" id="step3">
+            <span class="step-number">03</span>
+            <span class="step-text">INTERVIEW</span>
+            </div>
+           </div>
+
+        </div>
+           
+        </div>
+
+
+            <section class="getstart-content" id="upload-section">
+                <span class="logo">📁</span>
+                <h2>Upload Your Resume</h2>
+                <p>Upload your PDF resume to get personalized interview questions.</p>
+
+               <!--upload your resume -->
+
+                <div class="Upload" id="inputResume">
+                     <span class="upload-icon">📄</span>
+
+                    <h3>Drag & Drop Your Resume</h3>
+                    <p>Upload your resume in PDF format</p>
+                    <input type="file"
+                    id="Resume"
+                    accept=".pdf,application/pdf" >
+            
+                </div>
+                 <button class="next" id="next-to-preference" hidden>Next</button>
+            </section>
+
+            <!-- Preference Section -->
+
+           <section class="select-preference" id="preference-section" hidden>
+      <button class="back-link" id = "back">🔙</button>
+    <span class="logo">⚙️</span>
+  
+    <h2>Set Your Preferences</h2>
+    <p>Choose your preferred interview settings.</p>
+
+    <div class="preferences">
+
+        <!-- Interview Type -->
+        <div class="preference-group">
+            <label for="interview-type">Interview Type:</label>
+
+            <select id="interview-type">
+                <option value="technical">Technical</option>
+                <option value="behavioral">Behavioral</option>
+                <option value="mixed">Mixed</option>
+            </select>
+        </div>
+
+        <!-- Difficulty Level -->
+        <div class="preference-group">
+            <label for="difficulty-level">Difficulty Level:</label>
+
+            <select id="difficulty-level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <!-- Number of Questions -->
+        <div class="preference-group">
+            <label for="questionCount">Number of Questions:</label>
+
+            <select id="questionCount">
+                <option value="5">5 Questions</option>
+                <option value="10" selected>10 Questions</option>
+                <option value="15">15 Questions</option>
+            </select>
+        </div>
+
+        <!-- Programming Language -->
+        <div class="preference-group" id="languageGroup">
+            <label for="language">Programming Language:</label>
+
+            <select id="language">
+                <option value="">Select Language</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+
+    </div>
+
+    <button class="btn" id="start-interview-btn">
+        Start Interview
+    </button>
+
+</section>
+               
+
+                    
+            
+
+    <script src="app.js"></script>
+</body>
+</html>
